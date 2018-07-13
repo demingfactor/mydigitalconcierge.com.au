@@ -1,1 +1,5 @@
 /* Functions.css - Classes only, max length 9 characters */
+
+.hero-img {
+  background-image: url("../images/hero@3x.png");
+}
