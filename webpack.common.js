@@ -6,33 +6,33 @@ const webpack = require('webpack')
 // Use Loaders to help webpack understand more filetypes.
 //////////////////////////////////////////////////////////////////////
 
-  // Enable Webpack to read common non-JS files
-  const FileLoader = require("file-loader");
+// Enable Webpack to read common non-JS files
+const FileLoader = require("file-loader");
 
-  // Enable Webpack to read common non-JS files and make small file into embedded data
-  const UrlLoader = require("url-loader");
+// Enable Webpack to read common non-JS files and make small file into embedded data
+const UrlLoader = require("url-loader");
 
 //////////////////////////////////////////////////////////////////////
 // 2A. ADD PLUGINS THAT DO CONVERSIONS BETWEEN THINGS
 //////////////////////////////////////////////////////////////////////
 
-  // Autogenerates index.js into a index.html with auto script tags
-  const HtmlWebpackPlugin = require('html-webpack-plugin');
+// Autogenerates index.js into a index.html with auto script tags
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-  // Bundles (CSS) to own CSS file rather than embedded in CSS.
-  const ExtractTextPlugin = require("extract-text-webpack-plugin");
+// Bundles (CSS) to own CSS file rather than embedded in CSS.
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-  const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 //////////////////////////////////////////////////////////////////////
 // 2B. ADD PLUGINS THAT TIDY UP THINGS
 //////////////////////////////////////////////////////////////////////
 
-  // Purges unused CSS (Great for use with a style framework like Tailwind)
-  const PurgecssPlugin = require('purgecss-webpack-plugin');
+// Purges unused CSS (Great for use with a style framework like Tailwind)
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
-  // Wipes docs directory on recompiling, keeping the directory clean.
-  const CleanWebpackPlugin = require('clean-webpack-plugin');
+// Wipes docs directory on recompiling, keeping the directory clean.
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 //----------------------------------------------------------------------//
 
