@@ -150,6 +150,14 @@ section {
   cursor: pointer;
 }
 
+img.fit-cover {
+  object-fit: cover;
+}
+
+img.pos-ct {
+  object-position: center top;
+}
+
 @media (min-width: 576px) {
   blockquote {
     font-size: 1.563em;
