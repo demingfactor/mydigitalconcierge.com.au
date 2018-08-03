@@ -1,5 +1,35 @@
 /* Functions.css - Classes only, max length 9 characters */
 
-.hero-img {
-  background-image: url("../images/hero@3x.png");
+img.fit-cover {
+  object-fit: cover;
+}
+
+img.pos-ct {
+  object-position: center top;
+}
+
+img.obj-cover {
+  object-fit: cover;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+.video-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video-container>* {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.bg-purple-gradent {
+  background-image: linear-gradient(-90deg, #9253A1 3%, #9255A2 41%, #915DA7 59%, #8F6AAF 73%, #8D7DBB 86%, #8A94CA 97%, #8A95CA 97%);
 }
